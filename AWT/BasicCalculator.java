@@ -73,3 +73,4 @@ public class BasicCalculator extends JFrame implements ActionListener {
         SwingUtilities.invokeLater(BasicCalculator::new);
     }
 }
+
