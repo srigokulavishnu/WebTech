@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package GenericUtils;
+import java.util.List;
+    import java.util.HashSet;
 
-/**
- *
- * @author Admin
- */
-public class UniqueCounte {
-    
-}
+    public class UniqueCounter {
+        public static <T> int countUnique(List<T> list) {
+            return new HashSet<>(list).size();
+        }
+
+        public static void main(String[] args) {
+            List<String> list = List.of("apple", "banana", "apple", "orange", "banana");
+            System.out.println("Unique elements: " + countUnique(list));
+        }
+    }
